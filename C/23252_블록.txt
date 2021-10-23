@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+    int cnt, num;
+    scanf("%d",&cnt);
+    for(int i=0; i<cnt; i++) {
+        scanf("%d",&num);
+        printf("%d\n",num*23);
+    }
+}
