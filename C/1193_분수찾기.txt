@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define TRUE 1
+#define FALSE 0
+int main(void) {
+    int A=1, B=1, num, flag=TRUE;
+    scanf("%d",&num);
+    
+    for(int i=0; i<num-1; i++) {
+        if(flag) {
+            if(A==1) flag = FALSE;
+            else A-=1;
+            B+=1;
+        } else {
+            if(B==1) flag = TRUE;
+            else B-=1;
+            A+=1;
+        }
+    }
+    printf("%d/%d",A,B);
+}

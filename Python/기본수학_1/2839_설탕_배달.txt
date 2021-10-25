@@ -1,0 +1,10 @@
+kg = int(input())
+
+if kg >= 6 and kg%2 == 0:
+    print((kg-1)//10*2 + 2)
+elif kg == 7:
+    print("-1")
+elif kg >=3 and kg%2 == 1:
+    print((kg-6)//10*2 + 3)
+else:
+    print("-1")
