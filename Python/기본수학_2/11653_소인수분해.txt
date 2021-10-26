@@ -1,0 +1,13 @@
+N = int(input())
+temp = 2
+if N != 1:
+    while N!=1:
+        if N % temp == 0:
+            print(temp)
+            N /= temp
+            
+        if N % temp != 0:
+            if temp == 2 :
+                temp += 1
+            else:
+                temp += 2
