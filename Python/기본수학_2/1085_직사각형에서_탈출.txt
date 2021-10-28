@@ -1,0 +1,12 @@
+x, y, w, h = map(int, input().split())
+
+min_number = x
+
+if y < min_number:
+    min_number = y
+if w-x < min_number :
+    min_number = w-x
+if h-y < min_number :
+    min_number = h-y
+    
+print(min_number)
