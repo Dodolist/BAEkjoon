@@ -1,0 +1,13 @@
+test_case = int(input())
+
+for i in range(test_case):
+    x, y = map(int, input().split())
+    k = y - x
+    minus = 1
+    total = 0
+    while k > 0:
+        k -= minus
+        total += 1
+        if total % 2 == 0:
+            minus += 1
+    print(total)
