@@ -1,0 +1,16 @@
+arr = [0,0,0,0,0,0,0,0,0,0]
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+mul = num1*num2*num3
+mul = str(mul)
+mul_len = len(mul)
+
+for i in range(mul_len):
+    arr[int(mul[i])]+=1
+
+
+for i in range(10):
+    print(arr[i])

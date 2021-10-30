@@ -1,0 +1,4 @@
+length = int(input())
+grade_list = [int(x) for x in input().split()]
+
+print(sum(grade_list)/max(grade_list)/length*100)

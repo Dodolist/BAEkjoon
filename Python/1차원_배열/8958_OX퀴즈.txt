@@ -1,0 +1,15 @@
+count = int(input())
+
+for i in range(count):
+    OX = input()
+    total = 0
+    temp = 0
+    for j in range(len(OX)):
+        if OX[j] == 'O':
+            temp += 1
+        else :
+            total += temp*(temp+1)/2
+            temp = 0
+
+    total += temp*(temp+1)/2
+    print(int(total))

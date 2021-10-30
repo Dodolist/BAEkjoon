@@ -1,0 +1,9 @@
+test_case = int(input())
+for i in range(test_case):
+    grade_list = [int(x) for x in input().split()]
+    pass_student = 0
+    avg = (sum(grade_list) - grade_list[0]) // grade_list[0]
+    for j in range(grade_list[0]):
+        if avg < grade_list[j+1]:
+            pass_student += 1
+    print("%.3f%%" % (pass_student / grade_list[0] * 100))
