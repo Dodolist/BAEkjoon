@@ -1,0 +1,20 @@
+test_case = int(input())
+for t in range(test_case):
+    apartment = []
+    apartment.append([])
+
+    k = int(input())
+    n = int(input())
+
+    total = 0
+    for i in range(1, 15):
+        apartment[0].append(i)
+    for i in range(1, k+1):
+        apartment.append([])
+        for j in range(1, n+1):
+            temp = 0
+            for m in range(0, j):
+                temp +=  apartment[i-1][m]
+            apartment[i].append(temp)
+
+    print(apartment[k][n-1])
