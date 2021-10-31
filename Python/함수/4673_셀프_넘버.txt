@@ -1,0 +1,19 @@
+def self_number(number):
+    str_number = str(number)
+    result = number
+    for i in range(len(str_number)):
+        result += int(str_number[i])
+    if result <= 10000:
+        return result
+    else:
+        return False
+
+key_list = [0 for i in range(10000)]
+
+for i in range(1, 10001):
+    if self_number(i):
+        key_list[self_number(i)-1] = 1
+            
+for i in range(10000):
+    if key_list[i] == 0:
+        print(i+1)
